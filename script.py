@@ -42,4 +42,4 @@ distr_wise_norm['Score'] = (distr_wise_norm.multiply(score)).sum(axis=1)
 #### This gives the order of districts
 distr_wise_norm = distr_wise_norm.sort(columns='Score', ascending = False)
 
-
+distr_wise_norm.to_csv('index_final.csv', header= True, columns = {'Score'})
