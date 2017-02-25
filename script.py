@@ -9,7 +9,6 @@ import pandas as pd
 import numpy as np
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 distr_wise = pd.read_csv("district_wise_final3.csv")
 
