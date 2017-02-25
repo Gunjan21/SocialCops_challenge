@@ -10,7 +10,7 @@ import numpy as np
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
-distr_wise = pd.read_csv("district_wise_final3.csv")
+distr_wise = pd.read_csv("district_wise_final.csv")
 
 #finding correlation between different features
 corr = distr_wise.corr()
