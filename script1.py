@@ -20,8 +20,8 @@ for i in range(len(sh1["Tab No"])):
         if sh1["Tab No"][i] == sh2["Tab No"][j]:
             if sh2["Survey Start Date"][j] <= sh1["Survey Date"][i] <= sh2["Survey End Date"][j]:
                     sh1["Village Name"][i] = sh2["Village Name"][j]
-
-sh1.to_excel("updated_villages_andhra.xls", header=True)
+ 
+sh1.to_excel("predicted_villages.xls")
 
 '''                    
 18218 villages have been predicted out of 21531
