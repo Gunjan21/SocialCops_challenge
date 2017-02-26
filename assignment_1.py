@@ -45,8 +45,8 @@ for i in range(len(sh1["Tab No"])):
     for j in range(len(sh2["Tab No"])):
         if sh1["Tab No"][i] == sh2["Tab No"][j]:
             if sh2["Survey Start Date"][j] <= sh1["Survey Date"][i] <= sh2["Survey End Date"][j]:
-                    if sh2['Village Name'][j] not in village_list:
-                        village_list.append(sh2["Village Name"][j])
+                if sh2['Village Name'][j] not in village_list:
+                    village_list.append(sh2["Village Name"][j])
     sh1['Village Name'][i] = village_list
 
 
